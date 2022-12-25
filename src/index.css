@@ -1,0 +1,57 @@
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.snow_wrap {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  background-image: url("./assets/sneg.jpg");
+  background-size: cover;
+  background-position: center;
+  overflow: hidden;
+}
+.snow {
+  animation: animSnow 3s linear infinite;
+  position: absolute;
+  left: 0;
+  top: -650px;
+  bottom: 0;
+  right: 0;
+  content: "";
+  background-image: radial-gradient(5px 5px at 250px 100px, #fff, transparent),
+    radial-gradient(10px 10px at 50px 100px, #fff, transparent),
+    radial-gradient(8px 8px at 100px 50px, #fff, transparent),
+    radial-gradient(8px 8px at 200px 100px, #fff, transparent),
+    radial-gradient(8px 8px at 500px 10px, #fff, transparent),
+    radial-gradient(8px 8px at 600px 500px, #fff, transparent),
+    radial-gradient(8px 8px at 550px 350px, #fff, transparent),
+    radial-gradient(8px 8px at 650px 450px, #fff, transparent),
+    radial-gradient(8px 8px at 700px 250px, #fff, transparent),
+    radial-gradient(8px 8px at 17px 400px, #fff, transparent),
+    radial-gradient(8px 8px at 290px 200px, #fff, transparent),
+    radial-gradient(10px 10px at 100px 50px, #ccc, transparent);
+
+  background-size: 650px 650px;
+  -webkit-animation: animSnow 3s linear infinite;
+}
+@keyframes animSnow {
+  from {
+    transform: translateY(0);
+    -webkit-transform: translateY(0);
+    -moz-transform: translateY(0);
+    -ms-transform: translateY(0);
+    -o-transform: translateY(0);
+  }
+  to {
+    transform: translateY(650px);
+    -webkit-transform: translateY(650px);
+    -moz-transform: translateY(650px);
+    -ms-transform: translateY(650px);
+    -o-transform: translateY(650px);
+  }
+}
