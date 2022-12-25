@@ -7,6 +7,8 @@ export default class App extends Component {
       <>
         <div className="snow_wrap">
           <div className="snow"></div>
+          <h2>Sh.Biloliddin</h2>
+          <p>26.12.2022</p>
         </div>
       </>
     );

@@ -39,6 +39,20 @@
   background-size: 650px 650px;
   -webkit-animation: animSnow 3s linear infinite;
 }
+
+h2 {
+  position: absolute;
+  top: 90vh;
+  right: 20px;
+  color: white;
+}
+p {
+  position: absolute;
+  top: 94vh;
+  color: white;
+  right: 20px;
+}
+
 @keyframes animSnow {
   from {
     transform: translateY(0);
